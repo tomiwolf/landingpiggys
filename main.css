@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,900|Lato:300,700,900");
 
+html {
+  background-color: black;
+}
+
 .landing-nasty-pigs {
   align-items: flex-end;
   background-color: var(--black);
@@ -623,6 +627,7 @@
   text-align: center;
   top: 3160px;
   width: 952px;
+  z-index: 999;
 }
 
 .when-is-the-oficial-launch {
@@ -935,116 +940,108 @@
   width: 73px;
 }
 
-
-
 :root {
-    --black: 
-  rgba(0, 0, 0, 1);
-    --electric-violet: 
-  rgba(142, 0, 255, 1);
-    --purple-pizzazz: 
-  rgba(255, 0, 229, 1);
-    --white: 
-  rgba(255, 255, 255, 1);
-  
-    --font-size-xxs: 14px;
-    --font-size-xs: 18px;
-    --font-size-s: 20px;
-    --font-size-m: 24px;
-    --font-size-l: 36px;
-    --font-size-xl: 48px;
-    --font-size-xxl: 64px;
-  
-    --font-family-lato: "Lato";
-    --font-family-roboto: "Roboto";
-  }
-  
-  
-  
-  .border-1px-white {
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--white);
-  }
-  .lato-black-white-48px {
-    font-family: var(--font-family-lato);
-    font-size: var(--font-size-xl);
-    font-weight: 900;
-    font-style: normal;
-  }
-  .roboto-black-white-64px {
-    color: var(--white);
-    font-family: var(--font-family-roboto);
-    font-size: var(--font-size-xxl);
-    font-weight: 900;
-    font-style: normal;
-  }
-  .lato-black-white-36px {
-    color: var(--white);
-    font-family: var(--font-family-lato);
-    font-size: var(--font-size-l);
-    font-weight: 900;
-    font-style: normal;
-  }
-  .lato-light-white-24px {
-    color: var(--white);
-    font-family: var(--font-family-lato);
-    font-size: var(--font-size-m);
-    font-weight: 300;
-    font-style: normal;
-  }
-  .lato-bold-white-18px {
-    font-family: var(--font-family-lato);
-    font-size: var(--font-size-xs);
-    font-weight: 700;
-    font-style: normal;
-  }
-  .lato-black-white-18px {
-    color: var(--white);
-    font-family: var(--font-family-lato);
-    font-size: var(--font-size-xs);
-    font-weight: 900;
-    font-style: normal;
-  }
-  .lato-black-electric-violet-14px {
-    color: var(--electric-violet);
-    font-family: var(--font-family-lato);
-    font-size: var(--font-size-xxs);
-    font-weight: 900;
-    font-style: normal;
-  }
-  .lato-black-purple-pizzazz-48px {
-    color: var(--purple-pizzazz);
-    font-family: var(--font-family-lato);
-    font-size: var(--font-size-xl);
-    font-weight: 900;
-    font-style: normal;
-  }
-  .roboto-black-white-36px {
-    color: var(--white);
-    font-family: var(--font-family-roboto);
-    font-size: var(--font-size-l);
-    font-weight: 900;
-    font-style: normal;
-  }
-  .lato-bold-white-18px-2 {
-    color: var(--white);
-    font-family: var(--font-family-lato);
-    font-size: var(--font-size-xs);
-    font-weight: 700;
-    font-style: normal;
-  }
-  .roboto-light-white-20px {
-    color: var(--white);
-    font-family: var(--font-family-roboto);
-    font-size: var(--font-size-s);
-    font-weight: 300;
-    font-style: normal;
-  }
-  .lato-light-white-18px {
-    color: var(--white);
-    font-family: var(--font-family-lato);
-    font-size: var(--font-size-xs);
-    font-weight: 300;
-    font-style: normal;
-  }
+  --black: rgba(0, 0, 0, 1);
+  --electric-violet: rgba(142, 0, 255, 1);
+  --purple-pizzazz: rgba(255, 0, 229, 1);
+  --white: rgba(255, 255, 255, 1);
+
+  --font-size-xxs: 14px;
+  --font-size-xs: 18px;
+  --font-size-s: 20px;
+  --font-size-m: 24px;
+  --font-size-l: 36px;
+  --font-size-xl: 48px;
+  --font-size-xxl: 64px;
+
+  --font-family-lato: "Lato";
+  --font-family-roboto: "Roboto";
+}
+
+.border-1px-white {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--white);
+}
+.lato-black-white-48px {
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-xl);
+  font-weight: 900;
+  font-style: normal;
+}
+.roboto-black-white-64px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxl);
+  font-weight: 900;
+  font-style: normal;
+}
+.lato-black-white-36px {
+  color: var(--white);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-l);
+  font-weight: 900;
+  font-style: normal;
+}
+.lato-light-white-24px {
+  color: var(--white);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-m);
+  font-weight: 300;
+  font-style: normal;
+}
+.lato-bold-white-18px {
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  font-style: normal;
+}
+.lato-black-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-xs);
+  font-weight: 900;
+  font-style: normal;
+}
+.lato-black-electric-violet-14px {
+  color: var(--electric-violet);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-xxs);
+  font-weight: 900;
+  font-style: normal;
+}
+.lato-black-purple-pizzazz-48px {
+  color: var(--purple-pizzazz);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-xl);
+  font-weight: 900;
+  font-style: normal;
+}
+.roboto-black-white-36px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-l);
+  font-weight: 900;
+  font-style: normal;
+}
+.lato-bold-white-18px-2 {
+  color: var(--white);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  font-style: normal;
+}
+.roboto-light-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-s);
+  font-weight: 300;
+  font-style: normal;
+}
+.lato-light-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-xs);
+  font-weight: 300;
+  font-style: normal;
+}
